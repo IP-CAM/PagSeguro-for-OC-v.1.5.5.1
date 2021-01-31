@@ -1,4 +1,4 @@
-Módulo de integração PagSeguro para OpenCart
+Pagseguro Integration Module for OpenCart
 ============================================
 ---
 Descrição
