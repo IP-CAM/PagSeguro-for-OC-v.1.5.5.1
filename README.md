@@ -1,125 +1,139 @@
+Übersetzungstypen
+Textübersetzung
+Ausgangstext
+5000 / 5000
+Übersetzungsergebnisse
 Pagseguro Integration Module for OpenCart
-============================================
+======================================
 ---
-Descrição
+Description
 ---------
 ---
-Com o módulo instalado e configurado, você pode pode oferecer o PagSeguro como opção de pagamento em sua loja. O módulo utiliza as seguintes funcionalidades que o PagSeguro oferece na forma de APIs:
+With the module installed and configured, you can offer the pagseguro as a payment option in your store. The module uses the following features that the pagseguro offers in the form of APIs:
 
- - Integração com a [API de Pagamentos]
- - Integração com a [API de Notificações]
+ - Integration with [PAY API]
+ - Integration with the [notification API]
 
 
-Requisitos
+Requirements
 ----------
 ---
  - [OpenCart] 1.5.5.1
  - [PHP] 5.1.6+
  - [SPL]
- - [cURL]
- - [DOM]
+ - [CURL]
+ - [SUN]
 
 
-Instalação
+Installation
 ----------
 ---
- - Certifique-se de que não há instalação de outros módulos para o PagSeguro em seu sistema;
- - Baixe o repositório como arquivo zip ou faça um clone;
- - Copie as pastas *admin* e *catalog* para dentro de sua instalação OpenCart. Caso seja informado da sobrescrita de alguns arquivos, você pode confirmar o procedimento sem problemas. Esta instalação não afetará nenhum arquivo do seu sistema, somente adicionará os arquivos do módulo PagSeguro;
- - Certifique-se de que as permissões das pastas e arquivos recém copiados sejam, respectivamente, definidas como 755 e 644;
- - Na área administrativa do seu sistema, acesse o menu Extensions -> Payments -> PagSeguro -> Install.
+ - Make sure there is no installation of other modules for the pagseguro on your system;
+ - Download the repository as a zip file or make a clone;
+ - Copy the * admin * and * catalog folders into your OpenCart installation. If you are informed of the superscript of some files, you can confirm the trouble-free procedure. This installation will not affect any file from your system, you will only add the pagseguro module files;
+ - Make sure that the permissions of the folder and files recently copied are, respectively, defined as 755 and 644;
+ - In the administrative area of ​​your system, go to the Extensions -> Payments menu -> Pagseguro -> Install.
 
 
-Configuração
+Settings
 ------------
 ---
-Para acessar e configurar o módulo acesse o menu Extensions -> Payments -> PagSeguro -> Edit. As opções disponíveis estão descritas abaixo.
+To access and configure the module access the Extensions -> Payments -> Pagseguro -> Edit menu. The available options are described below.
 
- - **ativar módulo**: ativa/desativa o módulo.
- - **ordem de exibição**: define a ordem em que o PagSeguro vai aparecer no checkout de sua loja.
- - **e-mail**: e-mail cadastrado no PagSeguro.
- - **token**: token gerado no PagSeguro.
- - **environment**: define o ambiente de uso
- - **checkout**: especifica o modelo de checkout que será utilizado. É possível escolher entre checkout padrão, checkout lightbox.
- - **url de redirecionamento**: ao final do fluxo de pagamento no PagSeguro, seu cliente será redirecionado automaticamente para a página de confirmação em sua loja ou então para a URL que você informar neste campo. Para ativar o redirecionamento ao final do pagamento é preciso ativar o serviço de [Pagamentos via API]. Obs.: Esta URL é informada automaticamente e você só deve alterá-la caso deseje que seus clientes sejam redirecionados para outro local.
- - **url de notificação**: sempre que uma transação mudar de status, o PagSeguro envia uma notificação para sua loja ou para a URL que você informar neste campo. Obs.: Esta URL é informada automaticamente e você só deve alterá-la caso deseje receber as notificações em outro local.
- - **charset**: codificação do seu sistema (ISO-8859-1 ou UTF-8).
- - **log**: ativa/desativa a geração de logs.
- - **diretório**: informe o local a partir da raíz de instalação do osCommerce onde se deseja criar o arquivo de log. Ex.: /logs/ps.log. Caso não informe nada, o log será gravado dentro da pasta ../PagSeguroLibrary/PagSeguro.log.
+ - ** Activate module **: Active / Disables the module.
+ - ** Display Order **: Sets the order in which the pagseguro will appear at checkout from your store.
+ - ** E-mail **: E-mail registered in Pagseguro.
+ - ** Token **: Token generated in the pagseguro.
+ - ** Environment **: Defines the environment of use
+ - ** Checkout **: Specifies the checkout template that will be used. You can choose between standard checkout, Lightbox checkout.
+ - ** Redirection URL **: At the end of payment flow in PagSeguro, your client will be automatically redirected to the confirmation page in your store or to the URL that you inform in this field. To activate redirection at the end of the payment, it is necessary to activate the service of [API payments]. Note: This URL is automatically informed and you should only change it if you want your customers to be redirected to another location.
+ - ** Notification URL **: Whenever a transaction changes from status, the pagseguro sends a notification to your store or to the URL that you inform in this field. Note: This URL is automatically informed and you should only change it if you want to receive notifications in another location.
+ - ** Charset **: Coding of your system (ISO-8859-1 or UTF-8).
+ - ** Log **: Active / Disables Log Generation.
+ - ** Directory **: Enter the location from the OsCommerce installation root where you want to create the log file. Ex .: /logs/ps.log. If you do not know anything, the log will be recorded inside the ../pagsugurroibrary/pagseguro.log.
 
 
 Changelog
 ---------
 1.3
 
-- Adição da opção para utilizar o Checkout Lightbox;
-- Ajustes e melhorias em geral;
+- adding the option to use the Lightbox checkout;
+- adjustments and improvements in general;
 
 1.2
 
-- Adição da funcionalidade de chaveamento Sandbox/Produção;
-- Mudanças no layout do painel de configuração;
+- Adding the Sandbox / Production switching functionality;
+- changes in the layout of the configuration panel;
 
 1.1
 
-- Upgrade da lib PHP no módulo;
+- Upgrade of lib php in the module;
 
 ---
 1.0
 
- - Versão inicial. Integração com API de checkout e API de notificações;
- - Integração com API de Notificação do PagSeguro;
- - Adequação da licença;
- - Notificação;
- - Checkout Padrão;
- - Integração com Sandbox;
+ - Initial release. Integration with Checkout API and Notifications API;
+ - Integration with Pagseguro Notification API;
+ - Suitability of the license;
+ - Notification;
+ - Standard checkout;
+ - Integration with sandbox;
 
 
-Licença
+License
 -------
 ---
-Copyright 2013 PagSeguro Internet LTDA.
+Copyright 2013 Pagseguro Internet Ltda.
 
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+Licensed Under The Apache License, Version 2.0 (The "license"); You may not use this file except in compliance with the license. You may get the copy of the license at
 
-http://www.apache.org/licenses/LICENSE-2.0
+http://www.apache.org/licenses/license-2.0
 
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+Unless Required by Applicable Law or Agreed to In Writing, Software Distributed Under The License Issa Distributed On An "Basis, Without Warranties or Conditions Of Any Kind, Either Express or Implied. See The License for The Specific Language Governing Permissions and Limitations Under The License.
 
 
-Notas
+Grades
 -----
 ---
- - O PagSeguro somente aceita pagamento utilizando a moeda Real brasileiro (BRL).
- - Certifique-se que o email e o token informados estejam relacionados a uma conta que possua o perfil de vendedor ou empresarial.
- - Certifique-se que tenha definido corretamente o charset de acordo com a codificação (ISO-8859-1 ou UTF-8) do seu sistema. Isso irá prevenir que as transações gerem possíveis erros ou quebras ou ainda que caracteres especiais possam ser apresentados de maneira diferente do habitual.
- - Para que ocorra normalmente a geração de logs, certifique-se que o diretório e o arquivo de log tenham permissões de leitura e escrita.
+ - Pagseguro only accepts payment using the Brazilian real currency (BRL).
+ - Make sure the informed email and token are related to an account that has the seller or business profile.
+ - Make sure you have correctly defined the charset according to the encoding (ISO-8859-1 or UTF-8) of your system. This will prevent transactions from generating possible errors or breaks or even if special characters can be presented differently from the usual.
+ - In order to normally occur the generation of logs, make sure that the directory and log file have read and write permissions.
 
 
-[Dúvidas?]
+[Doubts?]
 ----------
 ---
-Em caso de dúvidas mande um e-mail para desenvolvedores@pagseguro.com.br
+If you have an e-mail to developers@pagseguro.com.br
 
 
-Contribuições
+Contributions
 -------------
 ---
-Achou e corrigiu um bug ou tem alguma feature em mente e deseja contribuir?
+Did you find it and correct a bug or do you have any feature in mind and want to contribute?
 
-* Faça um fork.
-* Adicione sua feature ou correção de bug.
-* Envie um pull request no [GitHub].
+* Make a Fork.
+* Add your feature or bug fix.
+* Send a pull request in [GitHub].
 
 
-  [API de Pagamentos]: https://pagseguro.uol.com.br/v2/guia-de-integracao/api-de-pagamentos.html
-  [API de Notificações]: https://pagseguro.uol.com.br/v2/guia-de-integracao/api-de-notificacoes.html
-  [Dúvidas?]: https://pagseguro.uol.com.br/desenvolvedor/comunidade.jhtml
-  [Pagamentos via API]: https://pagseguro.uol.com.br/integracao/pagamentos-via-api.jhtml
-  [Notificação de Transações]: https://pagseguro.uol.com.br/integracao/notificacao-de-transacoes.jhtml
-  [OpenCart]: http://www.opencart.com/
-  [PHP]: http://www.php.net/
-  [SPL]: http://php.net/manual/en/book.spl.php
-  [cURL]: http://php.net/manual/en/book.curl.php
-  [DOM]: http://php.net/manual/en/book.dom.php
-  [GitHub]: https://github.com/pagseguro/opencart
+  [PAYMENT API]: https://pagseguro.uol.com.br/v2/guia-de-integracao/api-de-pagamentos.html
+  [API 
+Mehr zu diesem Ausgangstext
+Für weitere Übersetzungsinformationen ist ein Ausgangstext erforderlich
+Feedback geben
+Seitenleisten
+Zeichenbeschränkung: 5.000. Du kannst mithilfe der Pfeile weiter übersetzen.
+
+
+[PAYMENT API]: https://pagseguro.uol.com.br/v2/guia-de-integracao/api-de-dagamentos.html
+   [Notification API]: https://pagseguro.uol.com.br/v2/guia-de-integracao/api-de-notificacoes.html
+   [Doubts?]: Https://pagseguro.uol.com.br/desennvolver/comunity.jhtml
+   [Payments via API]: https://pagseguro.uol.com.br/integracao/pagamentos-via-api.jhtml
+   [Transaction Notification]: https://pagseguro.uol.com.br/integracao/notificacao-de-transacoes.jhtml
+   [OpenCart]: http://www.opencart.com/
+   [PHP]: http://www.php.net/
+   [SPL]: http://php.net/manual/en/book.spl.php
+   [CURL]: http://php.net/manual/en/book.curl.php
+   [Gift]: http://php.net/manual/en/book.dom.php
+   [GITHUB]: https://github.com/pagseguro/opencart 
